@@ -20,19 +20,19 @@
 
   <view class="main">
     <view class=".but-grid-list menu-block">
-      <view class="but">
+      <view class="but" bindtap="submit_fankui">
         <view style="color:#ff9900;" class="iconfont icon-fankuiwenti"></view>
         <view>提交反馈</view>
       </view>
-      <view class="but">
+      <view class="but" bindtap="submit_xuqiu">
         <view style="color:#ff9900;" class="iconfont icon-xuqiudengji"></view>
         <view>提交需求</view>
       </view>
-      <view class="but">
+      <view class="but" bindtap='payme'>
         <view style="color:#ff3300;" class="iconfont icon-tuoguanshangjin-hui"></view>
         <view>打赏支持</view>
       </view>
-      <view class="but">
+      <view class="but" bindtap="aboutus">
         <view style="color:#00cc66;" class="iconfont icon-shouye"></view>
         <view>联系我们</view>
       </view>

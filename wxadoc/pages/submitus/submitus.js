@@ -1,20 +1,25 @@
-const wxCharts = require('../../utils/wxcharts-min.js');
-// pages/canvas/canvas.js
+// pages/submitus/submitus.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    windowWidth: null,
-    title: '',
+    placeholder:'',
+    button_text:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({title:options.type == 0 ? '消费统计分析' : '支出统计分析'});
+    if(options.type == 0){
+      this.setData({ button_text: '确定提交反馈' });
+      this.setData({ placeholder: '请输入你要反馈吐槽的内容' });
+    } else {
+      this.setData({ button_text: '确定提交需求' });
+      this.setData({ placeholder: '请输入你希望程序进行改进或添加的功能' });
+    }
   },
 
   /**
@@ -64,35 +69,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  getWidth() {
-    if (!this.data.windowWidth) {
-      try {
-        let res = wx.getSystemInfoSync();
-        this.setData({ windowWidth: res.windowWidth });
-      } catch (e) {
-        this.setData({ windowWidth: 320 });
-      }
-    }
-    return this.data.windowWidth;
-  },
-  stepCanvas(id) {
-    new wxCharts({
-      canvasId: id,
-      type: 'pie',
-      series: [{
-        name: '吃饭',
-        data: 50,
-      }, {
-        name: '外卖',
-        data: 30,
-      }, {
-        name: '电影',
-        data: 1,
-      }],
-      width: this.getWidth(),
-      height: 400,
-      dataLabel: true
-    });
   }
 })

@@ -6,7 +6,10 @@
     "pages/adduse/step2/step2",
     "pages/adduse/step3/step3",
     "pages/adduse/step4/step4",
-    "pages/canvas/canvas"
+    "pages/canvas/canvas",
+    "pages/payme/payme",
+    "pages/aboutus/aboutus",
+    "pages/submitus/submitus"
   ],
   "window": {
     "backgroundTextStyle": "black",

@@ -1,0 +1,4 @@
+<view class="page">
+  <textarea auto-focus auto-height placeholder="{{ placeholder }}" />
+  <button>{{ button_text }}</button>
+</view>

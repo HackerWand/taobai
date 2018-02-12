@@ -69,9 +69,21 @@ Page({
     wx.navigateTo({ url:'/pages/adduse/step1/step1'});
   },
   use_analyze(){
-    wx.navigateTo({ url: '/pages/canvas/canvas?title=消费统计分析&type=0' });
+    wx.navigateTo({ url: '/pages/canvas/canvas?type=0' });
   },
   take_analyze(){
-    wx.navigateTo({ url: '/pages/canvas/canvas?title=收入统计分析&type=1' });
+    wx.navigateTo({ url: '/pages/canvas/canvas?type=1' });
+  },
+  payme(){
+    wx.navigateTo({ url: '/pages/payme/payme' });
+  },
+  submit_fankui(){
+    wx.navigateTo({ url: '/pages/submitus/submitus?type=0' });
+  },
+  submit_xuqiu() {
+    wx.navigateTo({ url: '/pages/submitus/submitus?type=1' });
+  },
+  aboutus(){
+    wx.navigateTo({ url: '/pages/aboutus/aboutus' });
   }
 })

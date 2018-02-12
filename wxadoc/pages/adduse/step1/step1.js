@@ -6,9 +6,9 @@ Page({
    */
   data: {
     step_node: [
-      { id: 1, name: '是必须的' },
-      { id: 2, name: '只是一般的' },
-      { id: 3, name: '不是必须的' }
+      { id: 1, name: '是必要的' },
+      { id: 2, name: '可有可无的' },
+      { id: 3, name: '不是必要的' }
     ]
   },
 
