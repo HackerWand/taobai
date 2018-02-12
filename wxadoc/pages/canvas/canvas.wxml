@@ -1,0 +1,2 @@
+<text class="data-title">{{ title }}</text>
+<canvas canvas-id='step1Canvas' style="100vw;height:400px;"></canvas>

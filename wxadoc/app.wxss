@@ -1,0 +1,103 @@
+text.add-title{
+  color: #FFF;
+  text-align: center;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  font-weight: 800;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #FFF;
+}
+view.add-block{
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0;
+  display: block;
+  background-color: #5CADFF;
+}
+button.add-next-step{
+  background-color: #d7dde4;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFF;
+}
+.step{
+  position: fixed;
+  bottom: 10px;
+  width: 90vw;
+  margin-left: 5vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.step button{
+  margin-bottom: 10px;
+  color: #657180;
+  background-color: #FFF;
+}
+.item-list{
+  max-height: 40vh;
+}
+.but-grid-list{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.but-grid-list .but{
+  text-align: center;
+  flex-grow: 1;
+  width: calc(100vw / 3);
+  line-height: 10vh;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+.but-grid-list button.but::after{
+  width: 200%;
+  height: 200%;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 569983 */
+  src: url('//at.alicdn.com/t/font_569983_ewvjuihckyki6bt9.eot');
+  src: url('//at.alicdn.com/t/font_569983_ewvjuihckyki6bt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_569983_ewvjuihckyki6bt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_569983_ewvjuihckyki6bt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_569983_ewvjuihckyki6bt9.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfontdongtai:before { content: "\e62d"; }
+
+.icon-shouye:before { content: "\e633"; }
+
+.icon-fenxi:before { content: "\e625"; }
+
+.icon-fenxi1:before { content: "\e662"; }
+
+.icon-shourujine:before { content: "\e639"; }
+
+.icon-iconmoney:before { content: "\e632"; }
+
+.icon-shouru:before { content: "\e65c"; }
+
+.icon-zhichu:before { content: "\e666"; }
+
+.icon-dongtai:before { content: "\e629"; }
+
+.icon-tuoguanshangjin-hui:before { content: "\e60c"; }
+
+.icon-xuqiudengji:before { content: "\e6f4"; }
+
+.icon-web-icon-:before { content: "\e6f6"; }
+
+.icon-fankuiwenti:before { content: "\e660"; }
+

@@ -1,0 +1,111 @@
+button.add-log{
+  background-color: #5CADFF;
+  color: #FFF;
+}
+.top-block .left,.top-block .right{
+  border: none;
+   background-color: #FFF; 
+  border-radius: 0;
+  color: #FFF;
+  flex-grow: 1;
+  height: 15vh;
+  line-height: 15vh;
+  text-align: center;
+}
+.top-block .left{
+  color: #ff9900;
+   border-right:1px solid #EEE; 
+}
+.top-block .right{
+  color: #00cc66;
+}
+.top-block{
+  background-color: #5CADFF;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+   border-bottom: 1px solid #EEE; 
+}
+.top-block .iconfont{
+  font-size: 80rpx;
+  margin-right: 5px;
+}
+.top-block view{
+  display: inline-block;
+  vertical-align: top;
+}
+button::after{
+  width: 0;
+  height: 0;
+}
+.add-but{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100vw;
+  border-top: 1px solid #EEE;
+}
+.add-but button.but{
+  background-color: #FFF;
+  color: #657180;
+}
+.add-but button.but:last-child{
+  border-left: 1px solid #EEE;
+}
+.add-but button.but::after{
+  width: 0;
+  height:0;
+}
+.ad-banner-img{
+  width: 100vw;
+  height: 150px;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-block{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #657180;
+  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #EEE;
+}
+.new-block .iconfont{
+  font-size: 70rpx;
+  flex-grow: 1;
+  text-align: center;
+}
+.new-list{
+  border-left: 1px solid #EEE;
+  padding-left: 10px;
+  flex-grow: 12;
+  max-width: 80vw;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  position: relative;
+}
+.new-list view{
+  height: 60rpx;
+  max-width: 80vw;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.page{
+  padding-bottom: 20vh;
+}
+.menu-block .but{
+  padding: 8px 0px;
+  color: #657180;
+  width: calc(100vw / 4);
+  font-size: .8rem;
+  line-height: 50rpx;
+}
+.menu-block .iconfont{
+  font-size: 1.3rem;
+}

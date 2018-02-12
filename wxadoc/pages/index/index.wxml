@@ -1,0 +1,72 @@
+<view class="page">
+  <swiper indicator-dots="true" indicator-color="#5CADFF" autoplay="true" interval="5000" duration="200">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <view class="ad-banner-img" style="background-image:url({{ item }});"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <view class="top-block">
+    <view class="left">
+      <view class="iconfont icon-zhichu"></view>
+      <view>0.12</view>
+    </view>
+    <view class="right">
+      <view class="iconfont icon-shouru"></view>
+      <view>0.12</view>
+    </view>
+  </view>
+
+  <view class="main">
+    <view class=".but-grid-list menu-block">
+      <view class="but">
+        <view style="color:#ff9900;" class="iconfont icon-fankuiwenti"></view>
+        <view>提交反馈</view>
+      </view>
+      <view class="but">
+        <view style="color:#ff9900;" class="iconfont icon-xuqiudengji"></view>
+        <view>提交需求</view>
+      </view>
+      <view class="but">
+        <view style="color:#ff3300;" class="iconfont icon-tuoguanshangjin-hui"></view>
+        <view>打赏支持</view>
+      </view>
+      <view class="but">
+        <view style="color:#00cc66;" class="iconfont icon-shouye"></view>
+        <view>联系我们</view>
+      </view>
+      <view class="but">
+        <view bindtap="use_analyze" style="color:#5CADFF;" class="iconfont icon-fenxi1"></view>
+        <view>消费统计分析</view>
+      </view>
+      <view class="but">
+        <view bindtap="take_analyze" style="color:#5CADFF;" class="iconfont icon-fenxi"></view>
+        <view>收入统计分析</view>
+      </view>
+    </view>
+
+    <view class="new-block">
+      <view class="iconfont icon-dongtai"></view>
+      <view class="new-list">
+        <view>这是一条动态</view>
+        <view>这是一条动态</view>
+        <view>这是一条动态</view>
+        <view>这是一条动态</view>
+        <view>这是一条动态</view>
+      </view>
+    </view>
+    <view class="new-block">
+      <view class="iconfont icon-iconfontdongtai"></view>
+      <view class="new-list">
+        <view>这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻这是一条新闻</view>
+        <view>这是一条新闻</view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="but-grid-list add-but">
+    <button class="but" bindtap="add_log">添加支出记录</button>
+    <button class="but" bindtap="add_log">添加收入记录</button>
+  </view>
+</view>

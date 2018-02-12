@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/adduse/step1/step1",
+    "pages/adduse/step2/step2",
+    "pages/adduse/step3/step3",
+    "pages/adduse/step4/step4",
+    "pages/canvas/canvas"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#5CADFF",
+    "navigationBarTitleText": "陶白小账本",
+    "navigationBarTextStyle": "white"
+  }
+}
