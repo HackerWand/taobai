@@ -108,5 +108,7 @@ Page({
       wx.showToast({ title: '请输入金额', icon: 'none'});
     }
     console.log(e.detail.value.textarea)
+	console.log(this.data.param_list);
+	console.log(this.data.money)
   }
 })

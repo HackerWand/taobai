@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`(
+	`id` SMALLINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT '',
+	`nickname` VARCHAR(50) NOT NULL COMMENT '名称',
+    `gender` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '性别',
+    `oauth_wx` CHAR(32) COMMENT '微信登录',
+    `avatar` VARCHAR(500) COMMENT '头像',
+    `city` VARCHAR(10) COMMENT '城市',
+    `country` VARCHAR(10) COMMENT '国家',
+    `province` VARCHAR(10) COMMENT '省份',
+	`delete_time` DATETIME DEFAULT NULL COMMENT '删除时间',
+	`update_time` DATETIME DEFAULT NULL COMMENT '更新时间',
+	`create_time` DATETIME DEFAULT NULL COMMENT '创建时间'
+)ENGINE MYISAM CHARSET UTF8 COMMENT = '用户';

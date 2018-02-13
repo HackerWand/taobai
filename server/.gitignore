@@ -1,0 +1,6 @@
+.idea
+composer.lock
+*.log
+thinkphp
+application/id_card_img/*
+application/brokerage_img/*
