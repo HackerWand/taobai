@@ -8,13 +8,59 @@ Page({
   data: {
     windowWidth: null,
     title: '',
+    page_type: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({title:options.type == 0 ? '消费统计分析' : '支出统计分析'});
+    this.setData({ page_type: options.type });
+    this.setData({ title: options.type == 0 ? '消费统计分析' : '支出统计分析' });
+
+    if(options.type == 0){
+      this.stepCanvas('step1Canvas', [{
+        name: '必要的',
+        data: 20,
+      }, {
+        name: '可有可无',
+        data: 40,
+      }, {
+        name: '不必要的',
+        data: 10,
+      }]);
+      this.stepCanvas('step2Canvas', [{
+        name: '自己',
+        data: 50,
+      }, {
+        name: '朋友',
+        data: 20,
+      }, {
+        name: '陌生人',
+        data: 30,
+      }]);
+      this.stepCanvas('step3Canvas', [{
+        name: '吃饭',
+        data: 50,
+      }, {
+        name: '请客',
+        data: 50,
+      }, {
+        name: '零食',
+        data: 10,
+      }]); 
+    }else{
+      this.stepCanvas('step4Canvas', [{
+        name: '吃饭',
+        data: 50,
+      }, {
+        name: '外卖',
+        data: 20,
+      }, {
+        name: '电影',
+        data: 12,
+      }]);
+    }
   },
 
   /**
@@ -76,20 +122,11 @@ Page({
     }
     return this.data.windowWidth;
   },
-  stepCanvas(id) {
+  stepCanvas(id, series) {
     new wxCharts({
       canvasId: id,
       type: 'pie',
-      series: [{
-        name: '吃饭',
-        data: 50,
-      }, {
-        name: '外卖',
-        data: 30,
-      }, {
-        name: '电影',
-        data: 1,
-      }],
+      series: series,
       width: this.getWidth(),
       height: 400,
       dataLabel: true

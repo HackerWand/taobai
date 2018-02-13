@@ -1,17 +1,27 @@
-// pages/aboutus/aboutus.js
+// pages/add/step1/step1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    step_node: [
+      { id: 1, name: '工资' },
+      { id: 2, name: '父母' },
+      { id: 3, name: '朋友' },
+      { id: 4, name: '兼职' },
+      { id: 5, name: '保险' },
+      { id: 6, name: '彩金' },
+      { id: 7, name: '股票' },
+      { id: 8, name: '基金' },
+      { id: 9, name: '投资' }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
   },
 
   /**
@@ -61,5 +71,9 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  next(event) {
+    let data = event.currentTarget.dataset;
+    wx.navigateTo({ url: '/pages/addtake/step4/step4?add_form=' + data.item.id + ':' + data.item.name});
   }
 })

@@ -9,7 +9,9 @@
     "pages/canvas/canvas",
     "pages/payme/payme",
     "pages/aboutus/aboutus",
-    "pages/submitus/submitus"
+    "pages/submitus/submitus",
+    "pages/addtake/step1/step1",
+    "pages/addtake/step4/step4"
   ],
   "window": {
     "backgroundTextStyle": "black",

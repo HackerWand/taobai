@@ -1,1 +1,16 @@
-/* pages/aboutus/aboutus.wxss */
+.title{
+  text-align: center;
+  width: 100vw;
+  display: block;
+  line-height: 40px;
+  font-weight: 800;
+  color: #567180;
+}
+.value{
+  text-align: center;
+  width: 100vw;
+  font-size: .8rem;
+  display: block;
+  color: #5F5F5F;
+  margin-bottom: 10px;
+}

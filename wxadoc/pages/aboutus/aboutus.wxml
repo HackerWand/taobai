@@ -1,1 +1,11 @@
-<rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+<text class="title">github开源地址</text>
+<text class="value">https://github.com/HackerWand/taobai</text>
+
+<text class="title">陶白官网</text>
+<text class="value">https://taobai.slippersclown.com</text>
+
+<text class="title">个人博客</text>
+<text class="value">https://www.hackerwand.com</text>
+
+<text class="title">团队</text>
+<text class="value">https://www.slippersclown.com</text>

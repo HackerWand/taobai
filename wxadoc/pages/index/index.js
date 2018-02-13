@@ -65,8 +65,11 @@ Page({
   onShareAppMessage: function () {
   
   },
-  add_log(){
-    wx.navigateTo({ url:'/pages/adduse/step1/step1'});
+  adduse() {
+    wx.navigateTo({ url: '/pages/adduse/step1/step1' });
+  },
+  addtake(){
+    wx.navigateTo({ url: '/pages/addtake/step1/step1' });
   },
   use_analyze(){
     wx.navigateTo({ url: '/pages/canvas/canvas?type=0' });

@@ -1,1 +1,6 @@
-/* pages/canvas/canvas.wxss */
+.data-title{
+  text-align: center;
+  line-height: 40px;
+  color: #567180;
+  display: block;
+}

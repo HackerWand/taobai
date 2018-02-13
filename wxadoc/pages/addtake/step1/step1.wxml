@@ -1,0 +1,8 @@
+<view class="add-block">
+  <view class="step">
+    <text class="add-title">这笔收入的来源是？</text>
+    <scroll-view scroll-y="true" class="item-list">
+      <button bindtap="next" data-item="{{ item }}" wx:for="{{ step_node }}" wx:key="index" wx:for-item="item">{{ item.name }}</button>
+    </scroll-view>
+  </view>
+</view>

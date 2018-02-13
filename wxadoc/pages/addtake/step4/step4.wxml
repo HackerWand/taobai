@@ -2,7 +2,7 @@
   <view class="add-block">
     <text class="money">金额：{{ money }}</text>
     <view class="describe">
-      这是一笔{{ param_list[0][1] }}开支，关于{{ param_list[1][1] }}，用于{{ param_list[2][1] }}的支出
+      这是一笔来自{{ param_list[0][1] }}的收入
       <textarea placeholder-style="color:#FFF;" maxlength="100" name="textarea" auto-height placeholder="（备注信息100字以内）" />
     </view>
     <view class="number-input">
