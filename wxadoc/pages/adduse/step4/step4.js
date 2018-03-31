@@ -109,6 +109,9 @@ Page({
     }
     console.log(e.detail.value.textarea)
 	console.log(this.data.param_list);
+	// 0 necessity
+	// 1 charge_target
+	// 2 purpose
 	console.log(this.data.money)
   }
 })
